@@ -17,8 +17,9 @@ The weather data is obtained from a third-party API, providing accurate and up-t
 
 ### View Project
 
-To view project, visit [Weather Dashboard](**********). 
+To view project, visit [Weather Dashboard](https://murtaza34.github.io/Weather-Dashboard/). 
 
+Alternatively, you can visit the deployed page on [Netlify.](https://murtazas-weather-dashboard.netlify.app/)
 
 ## Preview
 

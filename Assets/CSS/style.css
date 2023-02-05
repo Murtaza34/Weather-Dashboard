@@ -1,0 +1,193 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  height: 100%;
+  background-color: #062c30;
+  transition: all ease;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  overflow-wrap: break-word;
+}
+
+/* ------------------- Hero ------------------- */
+.hero {
+  background: url(/Assets/Images/street.jpg);
+  background-size: cover;
+  background-position: bottom;
+  height: 38vh;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(6, 44, 48, 0.55);
+}
+
+.gradient {
+  background: linear-gradient(transparent, #062c30);
+  width: 100%;
+  height: 100%;
+}
+
+/* ------------------ Header ------------------ */
+.header {
+  color: white;
+  font-size: 5.3rem;
+  padding-top: 20px;
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  right: 100px;
+}
+
+/* ----------------- Sub-header ---------------- */
+.sub-header {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 350;
+  padding-top: 20px;
+  position: absolute;
+  top: 210px;
+  left: 50px;
+  right: 100px;
+}
+
+/* ---------------- Media Query --------------- */
+@media screen and (max-width: 1400px) {
+  .header {
+    font-size: 4.5rem;
+  }
+  .sub-header {
+    top: 190px;
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .header {
+    font-size: 3.7rem;
+  }
+  .sub-header {
+    top: 175px;
+    font-size: 1.2rem;
+  }
+  .hero {
+    height: 30vh;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .header {
+    font-size: 2.8rem;
+  }
+  .sub-header {
+    top: 155px;
+    font-size: 1.18rem;
+  }
+  .hero {
+    height: 30vh;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header {
+    font-size: 2.8rem;
+  }
+  .sub-header {
+    top: 155px;
+    font-size: 1.18rem;
+  }
+  .hero {
+    height: 30vh;
+  }
+  .search-card {
+    width: 300px;
+  }
+}
+
+/* ---------------- Search card --------------- */
+.search-card,
+.weather-card {
+  /* width: 30rem; */
+  /* height: 195px; */
+  background-color: #eeeeee;
+  box-shadow: 0 11px 15px -7px rgb(0 0 0 / 20%), 0 24px 38px 3px rgb(0 0 0 / 14%),
+    0 9px 46px 8px rgb(0 0 0 / 12%);
+}
+
+.search-button {
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: #36395a;
+  padding: 0px 12px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  background-color: #f9dc5c;
+  height: 3rem;
+  transition: 0.15s all ease;
+}
+
+.search-button:hover {
+  color: #fff;
+  box-shadow: rgba(24, 24, 24, 0.4) 0px 4px 4px -1px;
+  background-color: rgb(17, 97, 73);
+}
+
+.search-button:active {
+  transform: scale(0.98);
+  /* background-color: rgb(9, 128, 76); */
+}
+
+/* --------------- City buttons --------------- */
+.chosen-city {
+  display: inline-block;
+  font-weight: 500;
+  margin-bottom: 10px;
+  border: 0;
+  border-radius: 6px;
+  padding: 0 32px;
+  will-change: box-shadow, transform;
+  background: #d2e0cb;
+  height: 3rem;
+  cursor: pointer;
+  font-size: 1.125rem;
+  color: #36395a;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.chosen-city:hover {
+  box-shadow: rgba(24, 24, 24, 0.3) 0px 4px 4px -1px;
+  transform: translateY(-2px);
+}
+.chosen-city:active {
+  /* box-shadow: inset 0px 3px 7px #d6d6e7; */
+  transform: scale(0.97);
+}
+
+.chosen-city:focus {
+  background-color: #bbdefb;
+}
+
+.weather-stat {
+  font-size: 1.1rem
+}

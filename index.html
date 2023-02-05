@@ -35,8 +35,56 @@
     <title>Weather Dashboard</title>
   </head>
   <body>
+    <!-- ----------------- Hero ------------------ -->
+    <div class="hero">
+      <div class="overlay">
+        <div class="gradient">
+          <h1 class="header text-center">Weather Dashboard</h1>
+          <p class="sub-header text-center">
+            From rain or shine - stay on top of the weather with our weather dashboard.
+          </p>
+        </div>
+      </div>
+    </div>
 
-    
+    <!-- -------------- Weather Dashboard -------------- -->
+    <div class="container">
+      <div class="row gap-4">
+        <aside class="col-lg-3 search-card card p-3">
+          <h5 class="card-title">Search a City:</h5>
+          <input
+            type="text"
+            id="search-city-input"
+            placeholder="E.g. Madrid"
+            class="form-control"
+          />
+          <button type="button" class="search-button mt-2">
+            <i class="fa-solid fa-magnifying-glass me-2"></i>Search
+          </button>
+          <hr />
+          <!-- ------------ Popular cities ------------ -->
+          <h5>Popular cities</h5>
+          <button type="button" class="chosen-city" id="london">London</button>
+          <button type="button" class="chosen-city" id="paris">Paris</button>
+          <button type="button" class="chosen-city" id="newYork">New York</button>
+          <button type="button" class="chosen-city" id="tokyo">Tokyo</button>
+          <button type="button" class="chosen-city" id="dubai">Dubai</button>
+          <button type="button" class="chosen-city" id="istanbul">Istanbul</button>
+          <button type="button" class="chosen-city" id="seoul">Seoul</button>
+        </aside>
+        <article class="col-lg-8 weather-card card p-4">
+          <!-- -------- Users chosen city and current date --------- -->
+          <h1 class="current-city pt-1" id="current-weather">London</h1>
+          <div class="weather-stat py-2"><i class="fa-solid fa-temperature-half"></i> Temp:</div>
+          <div class="weather-stat py-2"><i class="fa-solid fa-wind"></i> Wind</div>
+          <div class="weather-stat py-2">
+            <i class="fa-solid fa-temperature-half"></i> Humidity:
+          </div>
+          <hr />
+        </article>
+      </div>
+    </div>
+
     <!-- ------------- Jquery Script ------------- -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>

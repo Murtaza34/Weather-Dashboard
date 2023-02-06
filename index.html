@@ -49,38 +49,54 @@
 
     <!-- -------------- Weather Dashboard -------------- -->
     <div class="container">
-      <div class="row gap-4">
+      <div class="row gap-3">
         <aside class="col-lg-3 search-card card p-3">
-          <h5 class="card-title">Search a City:</h5>
+          <h5 class="card-title mt-1">Search a City:</h5>
           <input
             type="text"
             id="search-city-input"
             placeholder="E.g. Madrid"
-            class="form-control"
+            class="input form-control"
           />
           <button type="button" class="search-button mt-2">
             <i class="fa-solid fa-magnifying-glass me-2"></i>Search
           </button>
           <hr />
-          <!-- ------------ Popular cities ------------ -->
-          <h5>Popular cities</h5>
-          <button type="button" class="chosen-city" id="london">London</button>
-          <button type="button" class="chosen-city" id="paris">Paris</button>
-          <button type="button" class="chosen-city" id="newYork">New York</button>
-          <button type="button" class="chosen-city" id="tokyo">Tokyo</button>
-          <button type="button" class="chosen-city" id="dubai">Dubai</button>
-          <button type="button" class="chosen-city" id="istanbul">Istanbul</button>
-          <button type="button" class="chosen-city" id="seoul">Seoul</button>
+          <!-- ------------ Recent Searches ------------ -->
+          <h5 class="recent-searches">Recent Search</h5>
+          <!-- 01 ---------- Create $('<button>') --------- -->
+          <!-- 02 ---------- then, $('<button>').addClass('chosen-city') ---------- -->
+          <!-- <button type="button" class="chosen-city" id="london">London</button> -->
         </aside>
         <article class="col-lg-8 weather-card card p-4">
           <!-- -------- Users chosen city and current date --------- -->
-          <h1 class="current-city pt-1" id="current-weather">London</h1>
-          <div class="weather-stat py-2"><i class="fa-solid fa-temperature-half"></i> Temp:</div>
-          <div class="weather-stat py-2"><i class="fa-solid fa-wind"></i> Wind</div>
-          <div class="weather-stat py-2">
-            <i class="fa-solid fa-temperature-half"></i> Humidity:
+          <h1 class="current-city py-1" id="current-city">London</h1>
+          <div class="cards d-flex justify-content-between">
+            <!-- -------------- Temperature -------------- -->
+            <div class="weather-stat-card card p-3 mb-2">
+              <h5 id="temp"><i class="fa-solid fa-temperature-half"></i> Temp:</h5>
+            </div>
+            <!-- ----------------- Wind ------------------ -->
+            <div class="weather-stat-card card p-3">
+              <h5 id="wind"><i class="fa-solid fa-wind"></i> Wind:</h5>
+            </div>
+            <!-- --------------- Humidity ---------------- -->
+            <div class="weather-stat-card card p-3">
+              <h5 id="humidity"><i class="fa-solid fa-droplet"></i> Humidity:</h5>
+            </div>
           </div>
           <hr />
+          <h4 class="py-1">5 - Day Forecast</h4>
+          <div class="cards d-flex justify-content-between gap-3" id="five-cards">
+            <!-- 01 ------------------ create $('<h6>') ------------------- -->
+            <!-- 02 -------- $('<h6>').addClass('five-day-card') ---------- -->
+            <!-- 03 -------- $('<h6>').val(current date) --------- -->
+            <div class="five-day-card card p-3" id="day-1"></div>
+            <div class="five-day-card card p-3" id="day-2"></div>
+            <div class="five-day-card card p-3" id="day-3"></div>
+            <div class="five-day-card card p-3" id="day-4"></div>
+            <div class="five-day-card card p-3" id="day-5"></div>
+          </div>
         </article>
       </div>
     </div>

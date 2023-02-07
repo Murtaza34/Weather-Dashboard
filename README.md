@@ -6,14 +6,6 @@ Users can enter the city name and the dashboard will display the current date us
 
 The weather data is obtained from a third-party API, providing accurate and up-to-date information about the current weather conditions. The dashboard's design is clean and user-friendly, making it a reliable tool for anyone looking to stay informed about the weather.
 
-#### The application will inlclude the following:
-
-- Display current date
-- Buttons generated after users input
-- Input field (where users can enter their tasks)
-- Save button (To store user input locally)
-- clear button (To remove user data from local storage)
-
 ### View Project
 
 To view project, visit [Weather Dashboard](https://murtaza34.github.io/Weather-Dashboard/).
